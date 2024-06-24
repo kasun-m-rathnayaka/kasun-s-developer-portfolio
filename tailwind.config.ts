@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config: Config = {
   content: [
@@ -22,8 +25,8 @@ const config: Config = {
           transform: "translate(-72%, -62%) scale(0.5)",
         },
         "100%": {
-          opacity: "1",
-          transform: "translate(-50%,-40%) scale(1)",
+          opacity: "0.8",
+          transform: "translate(-40%,-40%) scale(1)",
         },
       },
     },
@@ -35,6 +38,18 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
+
 export default config;
