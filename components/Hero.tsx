@@ -6,12 +6,12 @@ import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen">
-      {/* <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
+    <section className="w-full h-full mb-40">
+      <Spotlight
+        className="-top-20 -left-32 md:left-60 md:-top-20"
         fill="white"
-      /> */}
-      <BackgroundBeams />
+      />
+      <BackgroundBeams className=""/>
       <div className="w-[90%] md:w-[50%] mx-auto mt-24">
         <div className="flex flex-col justify-center">
           <h2 className="text-center text-sm tracking-widest">
@@ -21,7 +21,7 @@ const Hero = () => {
             className="text-center"
             words="Turning Creative Ideas into Interactive Realities."
           />
-          <p className="text-center tracking-wider text-sm md:text-lg lg:text-2xl my-7">
+          <p className="text-center tracking-wider text-base md:text-lg lg:text-2xl my-7">
             Hi, I am Kasun. a front end developer based in sri lanka
           </p>
           <div className="w-[150px] block m-auto">

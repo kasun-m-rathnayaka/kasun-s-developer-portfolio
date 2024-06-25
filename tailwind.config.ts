@@ -12,7 +12,10 @@ const config: Config = {
   theme: {
     colors:{
       black:{
-         primary:'#040C25', 
+         primary:'#010115', 
+      },
+      purple:{
+         100:'#8982a8', 
       }
     },
     animation: {

@@ -24,7 +24,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="dark bg-black-primary text-white overflow-hidden">{children}</main>
+          <main className="dark bg-black-primary overflow-hidden">{children}</main>
         </ThemeProvider>
       </body>
     </html>
