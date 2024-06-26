@@ -12,7 +12,7 @@ const Hero = () => {
         fill="white"
       />
       <BackgroundBeams className=""/>
-      <div className="w-[90%] md:w-[50%] mx-auto mt-24">
+      <div className="w-[90%] md:w-[50%] mx-auto mt-28">
         <div className="flex flex-col justify-center">
           <h2 className="text-center text-sm tracking-widest">
             Unleash web magic with next.js
