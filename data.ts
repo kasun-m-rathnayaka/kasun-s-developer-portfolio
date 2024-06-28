@@ -33,7 +33,7 @@ const cardDetails = [
     title: "With a strong focus on collaboration and teamwork",
     description:
       "I thrive in dynamic environments where communication and cooperation are key. I actively engage with stakeholders, gather requirements, and ensure alignment throughout the development process. ",
-      img: '/projects/SuwaDiwiyaProject.png',
+      img: '/projects/SuwaDiwiyaProject.jpeg',
   },
 ]
 

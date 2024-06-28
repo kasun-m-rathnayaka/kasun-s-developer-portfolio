@@ -46,9 +46,9 @@ const About = () => {
         <Image
           src={cardDetails[2].img ?? ''}
           width={500}
-          height={1000}
+          height={200}
           alt="linear demo image"
-          className="absolute -right-10 md:-right-[10%] lg:-right-[5%] -bottom-3 object-contain rounded-2xl"
+          className="absolute -right-10 -bottom-64 md:-right-[5%] lg:-right-[5%] object-contain rounded-2xl"
         />
       </WobbleCard>
     </div>
