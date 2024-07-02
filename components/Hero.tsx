@@ -24,7 +24,7 @@ const Hero = () => {
           <p className="text-center tracking-wider text-base md:text-lg lg:text-2xl my-7">
             Hi, I am Kasun. a front end developer based in sri lanka
           </p>
-          <div className="w-[150px] block m-auto">
+          <div className="w-[170px] block m-auto">
             <MagicButton word="See My Work" />
           </div>
         </div>

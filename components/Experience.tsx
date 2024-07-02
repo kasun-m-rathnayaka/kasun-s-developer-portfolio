@@ -35,11 +35,11 @@ const Experience = () => {
       date={date}
       iconStyle={{ background: "#110c26", color: "#fff" }}
       icon={
-        <div>
+        <div className="flex justify-center items-center w-full h-full">
           <img
             src="/assets/tech/css.png"
             alt="code"
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[80%] h-[80%] object-contain"
           />
         </div>
       }
@@ -53,42 +53,28 @@ const Experience = () => {
 
   return (
     <div>
-      <div className="mt-32 px-5 md:px-20 lg:px-32">
+      <div className="mt-[150px] ">
         <motion.div
           initial="hidden"
           animate="visible"
           variants={variants}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
-          <p className="text-[#dfd9ff] font-medium lg:text-[20px] text-[14px] leading-10">
-            INTRODUCTION
-          </p>
-          <h2 className="font-black text-white text-6xl md:text-7xl mb-5">
+          <p className="text-[#dfd9ff] font-medium lg:text-[20px] text-[16px] leading-10 text-center tracking-wide">
             Overview
+          </p>
+          <h2 className="font-black text-white text-3xl md:text-5xl md:max-w-[600px] mb-5 m-auto text-center px-5 md:px-10 lg:px-12">
+            My Work Experience{" "}
+            <span className=" text-purple-100">Timeline</span>
           </h2>
         </motion.div>
 
         {/* verticle timeline */}
         <VerticalTimeline>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="2011 - present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    icon={<img src="/assets/code.png"/>}
-  >
-    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-    </p>
-  </VerticalTimelineElement></VerticalTimeline>
-        {/* <VerticalTimeline>
           {experienceData.map((data, index) => (
             <ExperienceCard key={index} {...data} />
           ))}
-        </VerticalTimeline> */}
+        </VerticalTimeline>
       </div>
     </div>
   );
