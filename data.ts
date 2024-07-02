@@ -120,7 +120,7 @@ const projects = [
   {
     title: "Department of IT Thorana",
     description: "Our team created a Poson Thorana using Next.js, featuring interactive elements, modern design, and smooth performance to celebrate the cultural event.",
-    img: "/projects/SuwaDiwiyaProject.jpeg",
+    img: "/projects/7.png",
     link: "https://www.google.com",
     icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
   },

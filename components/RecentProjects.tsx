@@ -10,8 +10,6 @@ const RecentProjects = () => {
   const variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: "-50%" },
-    animation: { opacity: 1, x: 0 },
-    initial: { opacity: 0, x: "-50%" },
   };
 
   return (
@@ -28,24 +26,25 @@ const RecentProjects = () => {
             <span className="text-purple-100">Recent Projects</span>
           </h2>
         </motion.div>
-        <div className="flex gap-16 flex-wrap justify-center items-center mt-10">
+
+        <div className="flex gap-x-10 flex-wrap justify-center items-center xl:mt-40 mt-20">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-w-[90%] flex justify-center items-center min-h-72 md:min-w-[45%]"
+              className="min-h-[450px] w-screen md:w-[45%] xl:h-[550px] "
             >
               <PinContainer
                 title={project.link}
                 href={project.link}
-                className=""
+                className=" h-[360px] md:h-[400px] xl:h-[480px] flex justify-between items-stretch w-full"
               >
-                <div className="flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[21rem] ">
+                <div className="flex basis-full flex-col tracking-tight text-slate-100/50 w-[20rem] h-[21rem] lg:w-[400px] xl:w-[500px] ">
                   <Image
                     src={project.img}
                     width={400}
                     height={300}
                     alt={project.title}
-                    className=" rounded-2xl"
+                    className=" rounded-2xl lg:w-[400px] xl:w-[500px]"
                   />
                   <h3 className="max-w-xs !pb-2 !mt-2 font-bold text-slate-100 text-xl">
                     {project.title}
@@ -55,8 +54,9 @@ const RecentProjects = () => {
                       {project.description}
                     </span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <div className="flex justify-center items-center mt-4">
+
+                  <div className="flex justify-between items-center mt-8">
+                    <div className="flex justify-center items-center ">
                       {project.icons.map((icon, index) => (
                         <div className=" rounded-full bg-black-primary shadow-sm w-7 h-7 flex items-center justify-center">
                           <Image
@@ -70,6 +70,7 @@ const RecentProjects = () => {
                         </div>
                       ))}
                     </div>
+                    <div className="text-sm text-purple-100">Check out Project</div>
                   </div>
                 </div>
               </PinContainer>
