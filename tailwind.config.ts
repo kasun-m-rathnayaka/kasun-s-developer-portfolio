@@ -16,7 +16,10 @@ const config: Config = {
       },
       purple:{
          100:'#8982a8', 
-      }
+      },
+      white:{
+          primary:'#ffffff', 
+        },
     },
     animation: {
       spotlight: "spotlight 2s ease .75s 1 forwards",

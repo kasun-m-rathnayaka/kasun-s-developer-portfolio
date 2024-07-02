@@ -29,7 +29,7 @@ const Experience = () => {
     date,
   }: ExperienceCardProps) => (
     <VerticalTimelineElement
-      // className="vertical-timeline-element--work"
+      className="vertical-timeline-element--work"
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={date}
@@ -53,7 +53,6 @@ const Experience = () => {
 
   return (
     <div>
-      {" "}
       <div className="mt-32 px-5 md:px-20 lg:px-32">
         <motion.div
           initial="hidden"
@@ -71,15 +70,25 @@ const Experience = () => {
 
         {/* verticle timeline */}
         <VerticalTimeline>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    date="2011 - present"
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    icon={<img src="/assets/code.png"/>}
+  >
+    <h3 className="vertical-timeline-element-title">Creative Director</h3>
+    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+    <p>
+      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+    </p>
+  </VerticalTimelineElement></VerticalTimeline>
+        {/* <VerticalTimeline>
           {experienceData.map((data, index) => (
-            <ExperienceCard
-              key={index}
-              title={data.title}
-              description={data.description}
-              date={data.date}
-            />
+            <ExperienceCard key={index} {...data} />
           ))}
-        </VerticalTimeline>
+        </VerticalTimeline> */}
       </div>
     </div>
   );

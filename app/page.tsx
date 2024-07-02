@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
+import RecentProjects from "@/components/RecentProjects";
 import Tech from "@/components/Tech";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { WobbleCard } from "@/components/ui/WobbleCard";
@@ -14,7 +15,8 @@ export default function Home() {
       <FloatingNav navItems={navItems} />
       <Hero/>
       <About/>
-      <Experience/>
+      <RecentProjects/>
+      {/* <Experience/> */}
       <Tech/>
       <Works/>
       <Contact/>

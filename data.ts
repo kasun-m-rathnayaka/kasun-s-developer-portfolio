@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { title } from "process";
 
 const navItems = [
@@ -79,4 +80,49 @@ const experienceData: ExperienceData[] = [
       "I am a dedicated frontend developer with a robust portfolio of diverse projects. My expertise encompasses Next.js, Vite, and React Native, where I create dynamic and user-friendly interfaces.",
   },
 ];
-export { cardDetails, navItems, cardData, experienceData };
+
+const projects = [
+  {
+    title: "Photo Sharing Application",
+    description: "It serves as a platform for both finding job opportunities and sharing job listings among users.",
+    img: "/projects/1.png",
+    link: "https://www.google.com",
+    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+  },
+  {
+    title: "Alahaa.com e-commerce website",
+    description: "Crafted with care using Woo-commerce. Seamless shopping, secure transactions, and exceptional customer service.",
+    img: "/projects/2.png",
+    link: "https://www.google.com",
+    icons: ["wordpress.png", "elementor.png", "woocommerce.png", "payhere.png", "paypal.png"]
+  },
+  {
+    title: "Inventory Management System",
+    description: "Streamline inventory management for a cooking equipment shop, ensuring efficient tracking, updating, and monitoring of stock levels.",
+    img: "/projects/3.png",
+    link: "https://www.google.com",
+    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+  },
+  {
+    title: "A Point of Sales (POS) software",
+    description: "A Point of Sales (POS) software built with JavaFX and MySQL for efficient transaction processing.",
+    img: "/projects/5.png",
+    link: "https://www.google.com",
+    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+  },
+  {
+    title: "Suwa Diwiya Website",
+    description: "The site offers resources for managing diabetes, including dietary tips, exercise routines, and medication information. It features an intuitive design, user-friendly navigation, and responsive layouts to ensure accessibility across all devices.",
+    img: "/projects/6.png",
+    link: "https://www.google.com",
+    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+  },
+  {
+    title: "Department of IT Thorana",
+    description: "Our team created a Poson Thorana using Next.js, featuring interactive elements, modern design, and smooth performance to celebrate the cultural event.",
+    img: "/projects/SuwaDiwiyaProject.jpeg",
+    link: "https://www.google.com",
+    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+  },
+];
+export { cardDetails, navItems, cardData, experienceData, projects };

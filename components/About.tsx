@@ -11,7 +11,7 @@ const About = () => {
         className=" bg-gradient-to-r from-[#3C8CE7] from-10% to-[#B721FF] to-100%"
       >
         <div className="max-w-xs">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          <h2 className="text-left text-balance text-2xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             {cardDetails[0].title}
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
@@ -30,7 +30,7 @@ const About = () => {
         containerClassName="col-span-1 min-h-[300px]"
         className="bg-[#373b44] bg-gradient-to-r from-[#002661] from-10% to-[#92FFC0] to-100%"
       >
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+        <h2 className="max-w-80  text-left text-balance text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           {cardDetails[1].title}
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
@@ -42,7 +42,7 @@ const About = () => {
         className="bg-gradient-to-r from-[#3B2667] from-10% to-[#BC78EC] to-100%"
       >
         <div className="max-w-sm">
-          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             {cardDetails[2].title}
           </h2>
           <p className="mt-4 max-w-[40rem] text-left  text-base/6 text-neutral-200">
@@ -54,7 +54,7 @@ const About = () => {
           width={500}
           height={200}
           alt="linear demo image"
-          className="absolute -right-10 -bottom-64 md:-right-[5%] lg:-right-[5%] object-contain rounded-2xl"
+          className="absolute -right-10 -bottom-72 md:-right-[5%] lg:-right-[5%] object-contain rounded-2xl"
         />
       </WobbleCard>
     </div>
