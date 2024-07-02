@@ -37,4 +37,24 @@ const cardDetails = [
   },
 ]
 
-export { cardDetails, navItems };
+interface CardData {
+  title: string;
+  description: string;
+}
+
+const cardData: CardData[] = [
+  {
+    title: "Card 1",
+    description: "This is the description for Card 1",
+  },
+  {
+    title: "Card 2",
+    description: "This is the description for Card 2",
+  },
+  {
+    title: "Card 3",
+    description: "This is the description for Card 3",
+  },
+];
+
+export { cardDetails, navItems , cardData};
