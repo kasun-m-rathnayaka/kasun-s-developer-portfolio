@@ -1,28 +1,30 @@
+import { title } from "process";
+
 const navItems = [
-    {
-      name: "Home",
-      link: "#home",
-    },
-    {
-      name: "Projects",
-      link: "#projects",
-    },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
-  ];
+  {
+    name: "Home",
+    link: "#home",
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    name: "Testimonials",
+    link: "#testimonials",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
+];
 
 const cardDetails = [
   {
     title: "I prioritize best practices and continuous improvement",
     description:
       "I excel in managing projects efficiently through meticulous planning, clear communication, and effective time management. ",
-      img: '/assets/code.png',
+    img: "/assets/code.png",
   },
   {
     title: "Delivering top-notch results",
@@ -33,9 +35,9 @@ const cardDetails = [
     title: "With a strong focus on collaboration and teamwork",
     description:
       "I thrive in dynamic environments where communication and cooperation are key. I actively engage with stakeholders, gather requirements, and ensure alignment throughout the development process. ",
-      img: '/projects/SuwaDiwiyaProject.jpeg',
+    img: "/projects/SuwaDiwiyaProject.jpeg",
   },
-]
+];
 
 interface CardData {
   title: string;
@@ -57,4 +59,24 @@ const cardData: CardData[] = [
   },
 ];
 
-export { cardDetails, navItems , cardData};
+interface ExperienceData {
+  title: string;
+  date: string;
+  description: string;
+}
+
+const experienceData: ExperienceData[] = [
+  {
+    title: "Software Engineer",
+    date: "2021 - Present",
+    description:
+      "I am a dedicated frontend developer with a robust portfolio of diverse projects. My expertise encompasses Next.js, Vite, and React Native, where I create dynamic and user-friendly interfaces.",
+  },
+  {
+    title: "Software Engineer",
+    date: "2021 - Present",
+    description:
+      "I am a dedicated frontend developer with a robust portfolio of diverse projects. My expertise encompasses Next.js, Vite, and React Native, where I create dynamic and user-friendly interfaces.",
+  },
+];
+export { cardDetails, navItems, cardData, experienceData };

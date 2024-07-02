@@ -20,7 +20,7 @@ interface CardData {
         <motion.div>
           <Tilt
             optoins={tiltOptions}
-            className=" shadow-lg p-[1.5px] ml-10 bg-gradient-to-r from-[#24647f] to-[#203a43] to-[#2c5364] rounded-2xl"
+            className=" shadow-lg p-[1.5px] ml-10 bg-gradient-to-r from-[#38afe3] to-[#2c5364] rounded-2xl"
           >
             <div className=" bg-[#110c26] w-full rounded-2xl min-h-[250px] flex flex-col p-5 justify-evenly items-center">
               <h3 className="text-xl font-bold mb-2">{title}</h3>

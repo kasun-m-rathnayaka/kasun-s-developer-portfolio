@@ -2,8 +2,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { TiltCard } from "./ui/TiltCard";
-import { cardData } from "@/data";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { experienceData } from "@/data";
 
 const Experience = () => {
   const variants = {
@@ -13,47 +17,70 @@ const Experience = () => {
     initial: { opacity: 0, x: "-50%" },
   };
 
+  interface ExperienceCardProps {
+    title: string;
+    description: string;
+    date: string;
+  }
+
+  const ExperienceCard = ({
+    title,
+    description,
+    date,
+  }: ExperienceCardProps) => (
+    <VerticalTimelineElement
+      // className="vertical-timeline-element--work"
+      contentStyle={{ background: "#1d1836", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      date={date}
+      iconStyle={{ background: "#110c26", color: "#fff" }}
+      icon={
+        <div>
+          <img
+            src="/assets/tech/css.png"
+            alt="code"
+            className="w-[60%] h-[60%] object-contain"
+          />
+        </div>
+      }
+    >
+      <div>
+        <h3 className="vertical-timeline-element-title">{title}</h3>
+        <p>{description}</p>
+      </div>
+    </VerticalTimelineElement>
+  );
+
   return (
-    <div className="mt-32 px-5 md:px-20 lg:px-32">
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={variants}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-      >
-        <p className="text-[#dfd9ff] font-medium lg:text-[20px] text-[14px] leading-10">
-          INTRODUCTION
-        </p>
-        <h2 className="font-black text-white text-6xl md:text-7xl">Overview</h2>
-      </motion.div>
-      <motion.div>
-        <motion.p
-          initial="initial"
-          animate="animation"
+    <div>
+      {" "}
+      <div className="mt-32 px-5 md:px-20 lg:px-32">
+        <motion.div
+          initial="hidden"
+          animate="visible"
           variants={variants}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className=" mt-1 text-left text-base/6 text-neutral-200"
         >
-          I am a dedicated frontend developer with a robust portfolio of diverse
-          projects. My expertise encompasses Next.js, Vite, and React Native,
-          where I create dynamic and user-friendly interfaces. I excel in
-          implementing smooth animations using Framer Motion and have a strong
-          command over backend technologies like Node.js. My proficiency in SASS
-          and Tailwind CSS ensures visually appealing and responsive designs. I
-          am also adept in database management, with experience in SQL and
-          MongoDB. My comprehensive skill set and attention to detail drive my
-          passion for crafting exceptional web and mobile applications.
-        </motion.p>
-        <div className="mt-10 flex flex-wrap items-center w-screen gap-10">
-          {cardData.map((card, index) => (
-            <TiltCard
+          <p className="text-[#dfd9ff] font-medium lg:text-[20px] text-[14px] leading-10">
+            INTRODUCTION
+          </p>
+          <h2 className="font-black text-white text-6xl md:text-7xl mb-5">
+            Overview
+          </h2>
+        </motion.div>
+
+        {/* verticle timeline */}
+        <VerticalTimeline>
+          {experienceData.map((data, index) => (
+            <ExperienceCard
               key={index}
-              title={card.title}
-              description={card.description}
+              title={data.title}
+              description={data.description}
+              date={data.date}
             />
           ))}
-        </div>
-      </motion.div>
+        </VerticalTimeline>
+      </div>
     </div>
   );
 };
