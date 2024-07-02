@@ -1,7 +1,7 @@
-import React from 'react'
-import { WobbleCard } from './ui/WobbleCard'
-import { cardDetails } from '@/data'
-import Image from 'next/image'
+import React from "react";
+import { WobbleCard } from "./ui/WobbleCard";
+import { cardDetails } from "@/data";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -15,18 +15,21 @@ const About = () => {
             {cardDetails[0].title}
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
-          {cardDetails[0].description}
+            {cardDetails[0].description}
           </p>
         </div>
         <Image
-          src={cardDetails[0].img ?? ''}
+          src={cardDetails[0].img ?? ""}
           width={500}
           height={500}
           alt="linear demo image"
           className="absolute -right-10 lg:-right-[20%] -bottom-48 object-contain rounded-2xl"
         />
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]" className='bg-[#373b44] bg-gradient-to-r from-[#002661] from-10% to-[#92FFC0] to-100%'>
+      <WobbleCard
+        containerClassName="col-span-1 min-h-[300px]"
+        className="bg-[#373b44] bg-gradient-to-r from-[#002661] from-10% to-[#92FFC0] to-100%"
+      >
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           {cardDetails[1].title}
         </h2>
@@ -34,7 +37,10 @@ const About = () => {
           {cardDetails[1].description}
         </p>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[200px]" className='bg-gradient-to-r from-[#3B2667] from-10% to-[#BC78EC] to-100%'>
+      <WobbleCard
+        containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[200px]"
+        className="bg-gradient-to-r from-[#3B2667] from-10% to-[#BC78EC] to-100%"
+      >
         <div className="max-w-sm">
           <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             {cardDetails[2].title}
@@ -44,7 +50,7 @@ const About = () => {
           </p>
         </div>
         <Image
-          src={cardDetails[2].img ?? ''}
+          src={cardDetails[2].img ?? ""}
           width={500}
           height={200}
           alt="linear demo image"
@@ -52,7 +58,7 @@ const About = () => {
         />
       </WobbleCard>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

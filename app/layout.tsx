@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kasun | Portfolio",
   description: "Kasun Madhuranga Rathnayaka",
-  icons: "/favicon.png",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
