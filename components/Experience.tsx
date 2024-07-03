@@ -21,12 +21,14 @@ const Experience = () => {
     title: string;
     description: string;
     date: string;
+    icon: string;
   }
 
   const ExperienceCard = ({
     title,
     description,
     date,
+    icon,
   }: ExperienceCardProps) => (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
@@ -37,7 +39,7 @@ const Experience = () => {
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
-            src="/assets/tech/css.png"
+            src={icon}
             alt="code"
             className="w-[80%] h-[80%] object-contain"
           />
@@ -45,8 +47,8 @@ const Experience = () => {
       }
     >
       <div>
-        <h3 className="vertical-timeline-element-title">{title}</h3>
-        <p>{description}</p>
+        <h3 className="vertical-timeline-element-title text-xl lg:text-2xl">{title}</h3>
+        <p className="text-md lg:text-xl">{description}</p>
       </div>
     </VerticalTimelineElement>
   );

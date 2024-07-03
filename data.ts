@@ -64,20 +64,37 @@ interface ExperienceData {
   title: string;
   date: string;
   description: string;
+  icon:string
 }
 
 const experienceData: ExperienceData[] = [
   {
-    title: "Software Engineer",
-    date: "2021 - Present",
+    title: "Web Developer",
+    date: "2024 - Present",
     description:
-      "I am a dedicated frontend developer with a robust portfolio of diverse projects. My expertise encompasses Next.js, Vite, and React Native, where I create dynamic and user-friendly interfaces.",
+      "As a WordPress web developer at Moms Do Digital Company, I have crafted responsive and straightforward website designs for a diverse array of high-level clients, ensuring that each project meets their specific needs and exceeds expectations with modern, user-friendly interfaces.",
+      icon:"/assets/exp/momsdodigital.png",
   },
   {
-    title: "Software Engineer",
-    date: "2021 - Present",
+    title: "Chair of the Media and IT Bureau",
+    date: "2024 - Present",
     description:
-      "I am a dedicated frontend developer with a robust portfolio of diverse projects. My expertise encompasses Next.js, Vite, and React Native, where I create dynamic and user-friendly interfaces.",
+    "As Chair of the Media and IT Bureau in CSDS, I created multimedia items and led teams to achieve the society's goals, fostering collaboration and innovation.",
+    icon:"/assets/exp/csds.png",
+  },
+  {
+    title: "Freelancer",
+    date: "2022 - Present",
+    description:
+      "As a freelancer, I've developed expertise in MS Access, MySQL, MS Word, WordPress, Tableau, .NET framework development, and JavaFX. I also specialize in dynamic web development using React.js, Next.js, Node.js, Express.js, and MongoDB/MySQL databases, delivering tailored solutions to meet diverse client needs efficiently.",
+      icon:"/assets/exp/freelancelogo.png",
+  },
+  {
+    title: "Junior Treasurer",
+    date: "2024 - Present",
+    description:
+      "As Junior Treasurer of the Department of Information Technology, I have led numerous web development projects focused on enhancing societal value and driving positive change through innovative digital solutions.",
+      icon:"/assets/exp/usj.png",
   },
 ];
 
