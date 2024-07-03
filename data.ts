@@ -73,7 +73,7 @@ const experienceData: ExperienceData[] = [
     date: "2024 - Present",
     description:
       "As a WordPress web developer at Moms Do Digital Company, I have crafted responsive and straightforward website designs for a diverse array of high-level clients, ensuring that each project meets their specific needs and exceeds expectations with modern, user-friendly interfaces.",
-      icon:"/assets/exp/momsdodigital.png",
+      icon:"/assets/exp/moms.png",
   },
   {
     title: "Chair of the Media and IT Bureau",
