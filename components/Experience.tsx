@@ -41,7 +41,7 @@ const Experience = () => {
           <img
             src={icon}
             alt="code"
-            className="w-[80%] h-[80%] object-contain"
+            className="w-[100%] h-[100%] object-contain"
           />
         </div>
       }

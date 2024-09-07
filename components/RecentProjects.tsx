@@ -45,7 +45,6 @@ const RecentProjects = () => {
                       {project.icons.map((icon, index) => (
                         <div key={index} className=" rounded-full border-white-primary/[0.2] bg-black-primary shadow-sm w-9 h-9 flex items-center justify-center" style={{transform:`translatex(-${5 * index * 2 }px)`}}>
                           <Image
-                            
                             src={`/assets/tech/${icon}`}
                             width={25}
                             height={25}
