@@ -33,9 +33,9 @@ const cardDetails = [
       "My proactive approach to problem-solving and adaptability ensures that I can tackle challenges effectively. ",
   },
   {
-    title: "With a strong focus on collaboration and teamwork",
+    title: "See my work @ WordPress Web Developer - Moms Do Digital (MDD)",
     description:
-      "I thrive in dynamic environments where communication and cooperation are key. I actively engage with stakeholders, gather requirements, and ensure alignment throughout the development process. ",
+      "At Moms Do Digital, I worked as a WordPress Web Developer, where I crafted responsive, modern, and user-friendly websites tailored to meet the unique needs of high-level clients. My role involved transforming complex design concepts into functional, interactive, and aesthetically appealing web pages while adhering to best practices in UX/UI. ",
     img: "/projects/SuwaDiwiyaProject.jpeg",
   },
 ];
@@ -100,11 +100,11 @@ const experienceData: ExperienceData[] = [
 
 const projects = [
   {
-    title: "Photo Sharing Application",
+    title: "PhotoGenic Application",
     description: "It serves as a platform for both finding job opportunities and sharing job listings among users.",
     img: "/projects/1.png",
     link: "https://www.google.com",
-    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+    icons: ["reactjs.png", "nodejs.png", "expressjs.png", "sql.png", "postman.png","netlify.png"]
   },
   {
     title: "Alahaa.com e-commerce website",
@@ -118,28 +118,42 @@ const projects = [
     description: "Streamline inventory management for a cooking equipment shop, ensuring efficient tracking, updating, and monitoring of stock levels.",
     img: "/projects/3.png",
     link: "https://www.google.com",
-    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+    icons: ["javascript.png","reactjs.png", "nodejs.png", "expressjs.png", "mongodb.png","scss.png", "materialui.png","netlify.png"]
   },
   {
     title: "A Point of Sales (POS) software",
     description: "A Point of Sales (POS) software built with JavaFX and MySQL for efficient transaction processing.",
     img: "/projects/5.png",
     link: "https://www.google.com",
-    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
-  },
-  {
-    title: "Suwa Diwiya Website",
-    description: "The site offers resources for managing diabetes, including dietary tips, exercise routines, and medication information. It features an intuitive design, user-friendly navigation, and responsive layouts to ensure accessibility across all devices.",
-    img: "/projects/6.png",
-    link: "https://www.google.com",
-    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+    icons: ["java.png", "sql.png", "drawio.png","scencebuilder.png"]
   },
   {
     title: "Department of IT Thorana",
     description: "Our team created a Poson Thorana using Next.js, featuring interactive elements, modern design, and smooth performance to celebrate the cultural event.",
     img: "/projects/7.png",
     link: "https://www.google.com",
-    icons: ["reactjs.png", "nodejs.png", "sql.png", "expressjs.png", "reactquery.png"]
+    icons: ["reactjs.png", "nextjs.png", "vercel.png","acernityui.png"]
+  },
+  {
+    title: "Dhara Website",
+    description: "A website for the Dhara Society, built with WordPress and Elementor, to showcase the society's exquisite compositions and events.",
+    img: "/projects/8.png",
+    link: "https://www.google.com",
+    icons: ["wordpress.png", "elementor.png", "figma.png", "css.png", "html.png"]
+  },
+  {
+    title: "EduTrack University Management System",
+    description: "Comprehensive university management system that simplifies administrative tasks, enhances communication, and improves student engagement.",
+    img: "/projects/9.png",
+    link: "https://www.google.com",
+    icons: ["reactjs.png", "nextjs.png",  "mongodb.png", "postman.png","vercel.png"]
+  },
+  {
+    title: "UI UX Designs for a Mobile App",
+    description: "Designed user-friendly interfaces for a mobile app, ensuring a seamless user experience and intuitive navigation.",
+    img: "/projects/10.png",
+    link: "https://www.google.com",
+    icons: ["figma.png"]
   },
 ];
 export { cardDetails, navItems, cardData, experienceData, projects };

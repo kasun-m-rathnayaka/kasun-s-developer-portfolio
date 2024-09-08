@@ -41,13 +41,30 @@ const About = () => {
         containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[200px]"
         className="bg-gradient-to-r from-[#3B2667] from-10% to-[#BC78EC] to-100%"
       >
-        <div className="max-w-sm">
-          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+        <div className="max-w-lg !cursor-pointer">
+          <h2 className="max-w-lg md:max-w-lg  text-left text-balance text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             {cardDetails[2].title}
           </h2>
           <p className="mt-4 max-w-[40rem] text-left  text-base/6 text-neutral-200">
             {cardDetails[2].description}
           </p>
+          <button className="text-sm mt-5 flex text-purple-100">
+            Key accomplishments
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="size-4 mt-1 ml-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </button>
         </div>
         <Image
           src={cardDetails[2].img ?? ""}

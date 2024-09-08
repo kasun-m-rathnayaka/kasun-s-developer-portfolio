@@ -29,9 +29,9 @@ const RecentProjects = () => {
                     width={400}
                     height={300}
                     alt={project.title}
-                    className=" rounded-2xl lg:w-[400px] xl:w-[500px]"
+                    className={` rounded-2xl lg:w-[400px] xl:w-[500px] ${project.img === "/projects/10.png" ? "mb-4 mt-4" : ""}`}
                   />
-                  <h3 className="!pb-2 !mt-2 font-bold text-slate-100 text-xl w-full">
+                  <h3 className="!pb-8 !mt-2 font-bold text-slate-100 text-xl w-full line-clamp-1">
                     {project.title}
                   </h3>
                   <div className="!m-0 !p-0 font-normal">
