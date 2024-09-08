@@ -71,7 +71,7 @@ const About = () => {
           width={650}
           height={650}
           alt="linear demo image"
-          className="absolute top-32 md:-right-[2%] lg:-right-25%] object-contain rounded-2xl"
+          className="hidden md:block sm: absolute top-32 md:-right-[2%] lg:-right-25%] object-contain rounded-2xl"
         />
       </WobbleCard>
     </div>

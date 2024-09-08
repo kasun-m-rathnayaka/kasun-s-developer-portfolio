@@ -16,7 +16,7 @@ const RecentProjects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-h-[470px] w-screen md:w-[47%] xl:h-[550px] "
+              className="min-h-[470px] w-screen md:w-[47%] xl:h-[550px]"
             >
               <PinContainer
                 title={project.link}
