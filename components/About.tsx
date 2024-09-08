@@ -39,16 +39,16 @@ const About = () => {
       </WobbleCard>
       <WobbleCard
         containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[200px]"
-        className="bg-gradient-to-r from-[#3B2667] from-10% to-[#BC78EC] to-100%"
+        className="bg-gradient-to-r from-[#3B2667] from-10% to-[#BC78EC] to-100% cursor-pointer"
       >
-        <div className="max-w-lg !cursor-pointer">
+        <div className="max-w-lg cursor-pointer">
           <h2 className="max-w-lg md:max-w-lg  text-left text-balance text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             {cardDetails[2].title}
           </h2>
           <p className="mt-4 max-w-[40rem] text-left  text-base/6 text-neutral-200">
             {cardDetails[2].description}
           </p>
-          <button className="text-sm mt-5 flex text-purple-100">
+          <button className="text-sm mt-5 flex text-[#BA77EA]">
             Key accomplishments
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,10 +68,10 @@ const About = () => {
         </div>
         <Image
           src={cardDetails[2].img ?? ""}
-          width={500}
-          height={200}
+          width={650}
+          height={650}
           alt="linear demo image"
-          className="absolute -right-10 -bottom-72 md:-right-[5%] lg:-right-[5%] object-contain rounded-2xl"
+          className="absolute top-32 md:-right-[2%] lg:-right-25%] object-contain rounded-2xl"
         />
       </WobbleCard>
     </div>

@@ -33,10 +33,10 @@ const cardDetails = [
       "My proactive approach to problem-solving and adaptability ensures that I can tackle challenges effectively. ",
   },
   {
-    title: "See my work @ WordPress Web Developer - Moms Do Digital (MDD)",
+    title: "See my work @ Web Developer - Moms Do Digital (MDD)",
     description:
       "At Moms Do Digital, I worked as a WordPress Web Developer, where I crafted responsive, modern, and user-friendly websites tailored to meet the unique needs of high-level clients. My role involved transforming complex design concepts into functional, interactive, and aesthetically appealing web pages while adhering to best practices in UX/UI. ",
-    img: "/projects/SuwaDiwiyaProject.jpeg",
+    img: "/projects/mine.png",
   },
 ];
 

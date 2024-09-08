@@ -12,11 +12,11 @@ const RecentProjects = () => {
           <span className="text-purple-100">Recent Projects</span>
         </h2>
 
-        <div className="flex gap-x-10 flex-wrap justify-center items-center xl:mt-40 mt-20">
+        <div className="flex gap-x-0 flex-wrap justify-center items-center xl:mt-40 mt-20">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-h-[450px] w-screen md:w-[45%] xl:h-[550px] "
+              className="min-h-[470px] w-screen md:w-[47%] xl:h-[550px] "
             >
               <PinContainer
                 title={project.link}
