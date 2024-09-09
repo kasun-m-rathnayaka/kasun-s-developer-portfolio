@@ -11,7 +11,7 @@ const Hero = () => {
         className="-top-20 -left-32 md:left-60 md:-top-20"
         fill="white"
       />
-      <BackgroundBeams className=""/>
+      <BackgroundBeams className="" />
       <div className="w-[90%] md:w-[50%] mx-auto mt-28">
         <div className="flex flex-col justify-center">
           <h2 className="text-center text-sm tracking-widest">
@@ -19,13 +19,15 @@ const Hero = () => {
           </h2>
           <TextGenerateEffect
             className="text-center"
-            words="Crafting digital experiences with creativity and precision"
+            words="Crafting experiences with creativity & precision"
           />
           <p className="text-center tracking-wider text-base md:text-lg lg:text-2xl my-7">
             Hi, I am Kasun. a front end developer
           </p>
           <div className="w-[170px] block m-auto">
-            <MagicButton word="See My Work" />
+            <a href="#projects" className=" cursor-pointer">
+              <MagicButton word="See My Work" />
+            </a>
           </div>
         </div>
       </div>
