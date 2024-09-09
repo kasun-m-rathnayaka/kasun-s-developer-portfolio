@@ -36,14 +36,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           <div className="embla__container">
             {techstack.map((index) => (
               <div
-                className="embla__slide h-full w-full flex items-center gap-10"
+                className="embla__slide h-full w-full flex items-center ml-16 md:ml-0 gap-10"
                 key={index.id}
               >
                 <Image
                   src={`/assets/tech/${index.img}`}
                   alt={index.img}
-                  width={50}
-                  height={50}
+                  width={60}
+                  height={60}
                 />
                 <h1 className="hidden md:block tracking-wider text-base font-semibold">
                   {index.title}

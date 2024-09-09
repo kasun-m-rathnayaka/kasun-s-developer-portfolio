@@ -1,12 +1,12 @@
 import About from "@/components/About";
-import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import MyApproach from "@/components/MyApproach";
 import RecentProjects from "@/components/RecentProjects";
 import BackwordEmblaCarousel from "@/components/ui/BackwordCarousal";
 import EmblaCarousel from "@/components/ui/Carousal";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import Works from "@/components/Works";
 import { navItems } from "@/data";
 import { EmblaOptionsType } from "embla-carousel";
 
@@ -22,8 +22,8 @@ export default function Home() {
       <RecentProjects/>
       <EmblaCarousel options={OPTIONS} />
       <BackwordEmblaCarousel options={OPTIONS}/>
-      <Works/>
-      <Contact/>
+      <MyApproach/>
+      <Footer/>
     </main>
   );
 }

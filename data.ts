@@ -336,37 +336,38 @@ const techstack = [
     title: "Vercel",
   },
   {
-    id:28,
+    id: 28,
     img: "git.png",
     title: "Git",
   },
   {
-    id:29,
-    img:"payhere.png",
-    title:"PayHere"
+    id: 29,
+    img: "payhere.png",
+    title: "PayHere",
   },
   {
-    id:30,
-    img:"redux.png",
-    title: "Redux"
+    id: 30,
+    img: "redux.png",
+    title: "Redux",
   },
   {
-    id:31,
-    img:"tailwind.png",
-    title: "Tailwind.png"
+    id: 31,
+    img: "tailwind.png",
+    title: "Tailwind.png",
   },
   {
-    id:32,
-    img: "threejs.svg",
-    title: "Threejs"
-  },
-  {
-    id:33,
+    id: 33,
     img: "typescript.png",
-    title: "typescript"
+    title: "typescript",
   },
-  
-  
 ];
 
-export { cardDetails, navItems, cardData, experienceData, projects, techstack };
+const approaches = [
+  "This phase involves defining project goals, gathering requirements from stakeholders, and conducting a feasibility study to ensure alignment on objectives, scope, timeline, and resources before development begins.",
+
+  "The development phase includes designing system architecture, coding core functionality, and integrating software components to ensure smooth operation and cohesion, transforming plans into a working software solution.",
+
+  "This step involves testing for bugs, deploying the software to production, and providing ongoing maintenance, ensuring reliability and continuous improvements based on user feedback and operational needs.",
+];
+
+export { cardDetails, navItems, cardData, experienceData, projects, techstack, approaches };
