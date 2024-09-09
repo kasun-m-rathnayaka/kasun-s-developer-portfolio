@@ -378,7 +378,7 @@ const socialmedia = [
   },
   {
     id: 2,
-    img: "github.png",
+    img: "github.webp",
     link: "https://github.com/kasun-m-rathnayaka",
   },
 ];
