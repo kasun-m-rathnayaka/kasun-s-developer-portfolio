@@ -104,11 +104,12 @@ const experienceData: ExperienceData[] = [
 
 const projects = [
   {
+    id: "1",
     title: "PhotoGenic Application",
     description:
       "It serves as a platform for both finding job opportunities and sharing job listings among users.",
     img: "/projects/1.png",
-    link: "https://www.google.com",
+    link: "/1",
     icons: [
       "reactjs.png",
       "nodejs.png",
@@ -119,11 +120,12 @@ const projects = [
     ],
   },
   {
+    id: "2",
     title: "Alahaa.com e-commerce website",
     description:
       "Crafted with care using Woo-commerce. Seamless shopping, secure transactions, and exceptional customer service.",
     img: "/projects/2.png",
-    link: "https://www.google.com",
+    link: "/2",
     icons: [
       "wordpress.png",
       "elementor.png",
@@ -133,11 +135,12 @@ const projects = [
     ],
   },
   {
+    id: "3",
     title: "Inventory Management System",
     description:
       "Streamline inventory management for a cooking equipment shop, ensuring efficient tracking, updating, and monitoring of stock levels.",
     img: "/projects/3.png",
-    link: "https://www.google.com",
+    link: "/3",
     icons: [
       "javascript.png",
       "reactjs.png",
@@ -150,27 +153,30 @@ const projects = [
     ],
   },
   {
+    id: "4",
     title: "A Point of Sales (POS) software",
     description:
       "A Point of Sales (POS) software built with JavaFX and MySQL for efficient transaction processing.",
     img: "/projects/5.png",
-    link: "https://www.google.com",
+    link: "/4",
     icons: ["java.png", "sql.png", "drawio.png", "scencebuilder.png"],
   },
   {
+    id: "5",
     title: "Department of IT Thorana",
     description:
       "Our team created a Poson Thorana using Next.js, featuring interactive elements, modern design, and smooth performance to celebrate the cultural event.",
     img: "/projects/7.png",
-    link: "https://www.google.com",
+    link: "/5",
     icons: ["reactjs.png", "nextjs.png", "vercel.png", "acernityui.png"],
   },
   {
+    id: "6",
     title: "Dhara Website",
     description:
       "A website for the Dhara Society, built with WordPress and Elementor, to showcase the society's exquisite compositions and events.",
     img: "/projects/8.png",
-    link: "https://www.google.com",
+    link: "/6",
     icons: [
       "wordpress.png",
       "elementor.png",
@@ -180,11 +186,12 @@ const projects = [
     ],
   },
   {
+    id: "7",
     title: "EduTrack University Management System",
     description:
       "Comprehensive university management system that simplifies administrative tasks, enhances communication, and improves student engagement.",
     img: "/projects/9.png",
-    link: "https://www.google.com",
+    link: "/7",
     icons: [
       "reactjs.png",
       "nextjs.png",
@@ -194,11 +201,12 @@ const projects = [
     ],
   },
   {
+    id: "8",
     title: "UI UX Designs for a Mobile App",
     description:
       "Designed user-friendly interfaces for a mobile app, ensuring a seamless user experience and intuitive navigation.",
     img: "/projects/10.png",
-    link: "https://www.google.com",
+    link: "/8",
     icons: ["figma.png"],
   },
 ];
@@ -387,6 +395,51 @@ const socialmedia = [
   },
 ];
 
+type Project = {
+  id: string;
+  title: string;
+  description: string;
+  images: string[];
+  keyFeatures: string[];
+  technologies: string[];
+  challenges: string;
+  solutions: string;
+  nextSteps: string;
+  liveUrl?: string;
+  githubUrl?: string;
+};
+
+const projectData: Project[] = [
+  {
+    id: "1",
+    title: "PhotoGenic Application",
+    description:
+      "Photogenic is more than just a platform; it's a community designed to create job opportunities for talented photographers and videographers. Our goal is to connect creative minds with those who appreciate their work, providing a space to showcase skilled art and foster collaboration.\nThis project was a collaborative effort where we leveraged various tools to ensure seamless communication and efficient development. It was a rewarding experience working together as a team to bring this vision to life.Proud to have contributed to this project, combining creativity and technology with a collaborative approach to support the artistic community. Can't wait to see the incredible work that will be shared on Photogenic!",
+    images: [
+      "photogenic.jpeg",
+      "photogenic2.jpeg",
+      "photogenic3.jpeg",
+      "photogenic4.jpeg",
+    ],
+    keyFeatures: [
+      "📸 User account creation and customization",
+      "🔐 Secure login functionality",
+      "🖼️ Post and share stunning pictures",
+      "💬 Engage with the community by commenting on recent posts",
+      "📷 Follow your favorite photographers and videographers",
+    ],
+    technologies: ["React", "Node.js", "Express", "MySql", "Sass", "Postman"],
+    challenges:
+      "Implementing real-time inventory updates across multiple concurrent users.",
+    solutions:
+      "Utilized WebSockets for live inventory updates and implemented optimistic UI updates.",
+    nextSteps:
+      "Integrate AI-powered product recommendations and expand to mobile platforms.",
+    liveUrl: "https://genic.netlify.app/login",
+    githubUrl: "https://github.com/kasun-m-rathnayaka/social-media-app",
+  },
+];
+
 export {
   cardDetails,
   navItems,
@@ -395,5 +448,6 @@ export {
   projects,
   techstack,
   approaches,
-  socialmedia
+  socialmedia,
+  projectData,
 };

@@ -1,36 +1,40 @@
-import React from 'react'
-import { EmblaOptionsType } from 'embla-carousel'
+import React from "react";
+import { EmblaOptionsType } from "embla-carousel";
 import {
   PrevButton,
   NextButton,
-  usePrevNextButtons
-} from './EmblaCarouselArrowButtons'
-import useEmblaCarousel from 'embla-carousel-react'
-import Image from 'next/image'
+  usePrevNextButtons,
+} from "./EmblaCarouselArrowButtons";
+import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
 
 type PropType = {
-  slides: number[]
-  options?: EmblaOptionsType
-  images: string[]
-}
+  slides: number[];
+  options?: EmblaOptionsType;
+  images: string[];
+};
 
 const ProjectCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const {
     prevBtnDisabled,
     nextBtnDisabled,
     onPrevButtonClick,
-    onNextButtonClick
-  } = usePrevNextButtons(emblaApi)
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaApi);
 
   return (
     <section className="emblaProject">
       <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+        <div className="embla__container  rounded-xl">
           {props.images.map((index) => (
-            <img src={`/projects/${index}`} alt={index}/>
+            <img
+              src={`/projects/${index}`}
+              alt={index}
+              className="  object-contain mt-10"
+            />
           ))}
         </div>
       </div>
@@ -42,7 +46,7 @@ const ProjectCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectCarousel
+export default ProjectCarousel;
