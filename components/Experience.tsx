@@ -47,7 +47,9 @@ const Experience = () => {
       }
     >
       <div>
-        <h3 className="vertical-timeline-element-title text-xl lg:text-2xl">{title}</h3>
+        <h3 className="vertical-timeline-element-title text-xl lg:text-2xl">
+          {title}
+        </h3>
         <p className="text-md lg:text-xl">{description}</p>
       </div>
     </VerticalTimelineElement>

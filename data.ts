@@ -370,4 +370,26 @@ const approaches = [
   "This step involves testing for bugs, deploying the software to production, and providing ongoing maintenance, ensuring reliability and continuous improvements based on user feedback and operational needs.",
 ];
 
-export { cardDetails, navItems, cardData, experienceData, projects, techstack, approaches };
+const socialmedia = [
+  {
+    id: 1,
+    img: "linkedin.png",
+    link: "https://www.linkedin.com/in/rathnayaka/",
+  },
+  {
+    id: 2,
+    img: "github.png",
+    link: "https://github.com/kasun-m-rathnayaka",
+  },
+];
+
+export {
+  cardDetails,
+  navItems,
+  cardData,
+  experienceData,
+  projects,
+  techstack,
+  approaches,
+  socialmedia
+};

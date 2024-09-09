@@ -8,10 +8,11 @@ import MagicButton from "./ui/MagicButton";
 const MyApproach = () => {
   return (
     <div>
-      <div className="mt-[100px] px-5 md:px-10 lg:px-32 ">
+      <div className="mt-[100px] px-5 md:px-10 lg:px-32 flex flex-col items-center">
         <h2 className="font-black text-white text-3xl md:text-5xl md:max-w-[600px] mb-5 m-auto text-center">
           My <span className="text-purple-100">Approach</span>
         </h2>
+        <p className="max-w-[900px] text-center">My development approach is uniquely focused on blending creativity with precision. I prioritize understanding the core needs of users, designing intuitive interfaces, and building scalable, high-performance solutions. By leveraging modern technologies and agile methodologies, I ensure each project is crafted with attention to detail, adaptability, and future growth in mind. This results in interactive and seamless digital experiences that stand out in both functionality and design.</p>
       </div>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
         <Card approach="Planning" title={approaches[0]}>
@@ -59,7 +60,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] rounded-xl group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] relative"
+      className="border border-black/[0.2] rounded-xl group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 h-[30rem] relative"
     >
       <AnimatePresence>
         {hovered && (

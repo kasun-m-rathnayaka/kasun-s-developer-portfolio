@@ -1,20 +1,37 @@
 import React from "react";
-import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import MagicButton from "./ui/MagicButton";
 
 export function Footer() {
   return (
-    <BackgroundBeamsWithCollision>
-      <h2 className="text-2xl relative z-20 md:text-4xl font-bold text-center text-black dark:text-white font-sans tracking-tight px-5 lg:px-20">
-        What&apos;s cooler than Beams?{" "}
-        <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-          <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
-            <span className="text-purple-100">Exploding beams.</span>
-          </div>
-          <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
-            <span className="">Exploding beams.</span>
+    <footer className="w-full pt-10" id="contact">
+      <div className="w-full min-h-96 -mb-36 md:m-0">
+        <div className="md:-mb-[600px] md:mt-10 m-auto text-center px-5 flex justify-center items-center flex-col">
+          <h1 className="font-black text-white text-3xl md:text-5xl md:max-w-[950px] md:px-10 lg:px-12 tracking-widest m-auto text-center px-5">
+            Ready to turn your ideas into{" "}
+            <span className="text-purple-100">Interactive realities</span>
+          </h1>
+          <p className="pt-10 max-w-[400px]">
+            Have a project in mind? Reach out to me, and let's turn your ideas
+            into interactive realities that inspire and engage.
+          </p>
+          <a href="mailto:k.rathnayaka365@gmail.com" className="mt-14">
+            <MagicButton word="Let's get in touch" />
+          </a>
+          <div className="mt-10 flex justify-between">
+            <div>
+              <p>Copyright © Kasun Rathnayaka 2024 | Frontend Developer</p>
+            </div>
+            <div className="flex">
+
+            </div>
           </div>
         </div>
-      </h2>
-    </BackgroundBeamsWithCollision>
+        <img
+          src={"/img/backdrop.png"}
+          alt="backdrop"
+          className="w-full h-full opacity-15 rotate-180 object-cover"
+        />
+      </div>
+    </footer>
   );
 }
