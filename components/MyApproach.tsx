@@ -7,7 +7,7 @@ import MagicButton from "./ui/MagicButton";
 
 const MyApproach = () => {
   return (
-    <div>
+    <div id="approach">
       <div className="mt-[100px] px-5 md:px-10 lg:px-32 flex flex-col items-center">
         <h2 className="font-black text-white text-3xl md:text-5xl md:max-w-[600px] mb-5 m-auto text-center">
           My <span className="text-purple-100">Approach</span>

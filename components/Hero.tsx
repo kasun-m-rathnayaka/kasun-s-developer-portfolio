@@ -6,7 +6,7 @@ import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   return (
-    <section className="w-full h-full mb-40">
+    <section className="w-full h-full mb-40" id="home">
       <Spotlight
         className="-top-20 -left-32 md:left-60 md:-top-20"
         fill="white"

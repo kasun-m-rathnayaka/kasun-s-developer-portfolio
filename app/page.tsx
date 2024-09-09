@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import { Footer } from "@/components/Footer";
 import Hero from "@/components/Hero";
+import { FloatingDockDemo } from "@/components/ModernDock";
 import MyApproach from "@/components/MyApproach";
 import RecentProjects from "@/components/RecentProjects";
 import BackwordEmblaCarousel from "@/components/ui/BackwordCarousal";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main>
       <FloatingNav navItems={navItems} />
+      {/* <FloatingDockDemo/> */}
       <Hero/>
       <About/>
       <Experience/>

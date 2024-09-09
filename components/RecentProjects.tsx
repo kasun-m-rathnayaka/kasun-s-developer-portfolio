@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <div>
+    <div id="projects">
       <div className="mt-[150px] px-5 md:px-10 lg:px-32 ">
         <div className="flex flex-col justify-center items-center">
           <h2 className="font-black text-white text-3xl md:text-5xl md:max-w-[600px] mb-5 m-auto text-center">

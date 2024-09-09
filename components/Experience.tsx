@@ -56,7 +56,7 @@ const Experience = () => {
   );
 
   return (
-    <div>
+    <div id="experience">
       <div className="mt-[150px] ">
         <motion.div
           initial="hidden"
