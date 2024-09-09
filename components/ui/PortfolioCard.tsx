@@ -126,20 +126,20 @@ const PortfolioCard = ({ project }: { project: Project }) => {
 
       <div className="grid md:grid-cols-2 gap-6">
         <KeyFeaturesCard features={project.keyFeatures} />
-        <ChallengesAndSolutionsCard
+        {/* <ChallengesAndSolutionsCard
           challenges={project.challenges}
           solutions={project.solutions}
-        />
+        /> */}
       </div>
 
-      <Card>
+      {/* <Card>
         <CardHeader>
           <CardTitle>Next Steps</CardTitle>
         </CardHeader>
         <CardContent>
           <p>{project.nextSteps}</p>
         </CardContent>
-      </Card>
+      </Card> */}
     </div>
   );
 };

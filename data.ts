@@ -429,14 +429,75 @@ const projectData: Project[] = [
       "📷 Follow your favorite photographers and videographers",
     ],
     technologies: ["React", "Node.js", "Express", "MySql", "Sass", "Postman"],
-    challenges:
-      "Implementing real-time inventory updates across multiple concurrent users.",
-    solutions:
-      "Utilized WebSockets for live inventory updates and implemented optimistic UI updates.",
-    nextSteps:
-      "Integrate AI-powered product recommendations and expand to mobile platforms.",
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
     liveUrl: "https://genic.netlify.app/login",
     githubUrl: "https://github.com/kasun-m-rathnayaka/social-media-app",
+  },
+  {
+    id: "2",
+    title: "Alahaa.com e-commerce website",
+    description:
+      "This project involved setting up and configuring the main WooCommerce features to create a seamless and efficient e-commerce experience. From product listings to payment gateways, the site is designed to provide both the client and customers with a smooth and user-friendly platform.",
+    images: ["2.png"],
+    keyFeatures: [
+      "📸 Product Listings & Categories",
+      "🔐 Shopping Cart & Checkout Process",
+      "🖼️ Payment Gateway Integration",
+      "💬 Shipping & Tax Setup",
+      "📷 Responsive Design for a seamless experience across all devices",
+      "🔐 User account creation and customization",
+    ],
+    technologies: [
+      "Woocommerce",
+      "Wordpress",
+      "Elementor",
+      "Payhere",
+      "Paypal",
+    ],
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
+  },
+  {
+    id: "3",
+    title: "Inventory Management Web Application",
+    description:
+      "This project involved creating an inventory management system for a cooking equipment shop to streamline the tracking, updating, and monitoring of stock levels. The system was designed to provide real-time data on inventory levels, sales, and product details, ensuring efficient management of stock and timely reordering of items.",
+    images: ["4.png"],
+    keyFeatures: [
+      "📸 Real-time Inventory Tracking",
+      "🔐 Product Details & Sales Reports",
+      "🖼️ Low Inventory Notifications",
+      "💬 Multiple User Roles & Permissions",
+      "📷 Responsive Design for a seamless experience across all devices",
+    ],
+    technologies: ["React", "Node.js", "Express", "MySql", "Sass", "Postman","Material Ui"],
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
+  },
+  {
+    id: "4",
+    title: "JavaFX Point of Sales (POS) System",
+    description:
+      "The JavaFX Point of Sales (POS) system is a robust, efficient, and user-friendly solution designed to streamline and automate sales processes for small to medium-sized businesses. Built using the JavaFX framework, this system delivers an intuitive interface combined with powerful backend features, offering seamless transaction handling, inventory management, and real-time sales analytics.",
+    images: ["5.png"],
+    keyFeatures: [
+      "User-Friendly Interface: The JavaFX-based interface is easy to navigate, providing a clean and responsive design that minimizes training time for employees.",
+      "Inventory Management: Track stock levels in real-time, manage product details, and receive notifications for low inventory, ensuring that your shelves are always stocked.",
+      "Sales Tracking: Keep a detailed record of all sales transactions, including receipts, refunds, and payment methods, enabling a clear view of your daily revenue.",
+      "Multiple Payment Options: Supports a variety of payment methods, including cash, credit/debit cards, and mobile payments, ensuring flexibility for customers.",
+    ],
+    technologies: [
+      "Javafx",
+      "Mysql",
+      "Scene Builder",
+    ],
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
   },
 ];
 

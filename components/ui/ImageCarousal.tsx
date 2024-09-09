@@ -26,7 +26,7 @@ const ProjectCarousel: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <section className="emblaProject">
+    <section className="emblaProject flex flex-col justify-center items-center">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container  rounded-xl">
           {props.images.map((index) => (
