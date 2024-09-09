@@ -1,6 +1,6 @@
 import About from "@/components/About";
 import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 import Hero from "@/components/Hero";
 import MyApproach from "@/components/MyApproach";
 import RecentProjects from "@/components/RecentProjects";

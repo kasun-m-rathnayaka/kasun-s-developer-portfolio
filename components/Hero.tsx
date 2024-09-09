@@ -15,14 +15,14 @@ const Hero = () => {
       <div className="w-[90%] md:w-[50%] mx-auto mt-28">
         <div className="flex flex-col justify-center">
           <h2 className="text-center text-sm tracking-widest">
-            Unleash web magic with next.js
+            Unleash web magic with next level of web development
           </h2>
           <TextGenerateEffect
             className="text-center"
-            words="Turning Creative Ideas into Interactive Realities."
+            words="Crafting digital experiences with creativity and precision"
           />
           <p className="text-center tracking-wider text-base md:text-lg lg:text-2xl my-7">
-            Hi, I am Kasun. a front end developer based in sri lanka
+            Hi, I am Kasun. a front end developer
           </p>
           <div className="w-[170px] block m-auto">
             <MagicButton word="See My Work" />
