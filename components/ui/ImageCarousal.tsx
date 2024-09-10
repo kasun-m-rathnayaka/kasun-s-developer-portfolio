@@ -31,6 +31,7 @@ const ProjectCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container  rounded-xl">
           {props.images.map((index) => (
             <img
+              key={index}
               src={`/projects/${index}`}
               alt={index}
               className="  object-contain mt-10"

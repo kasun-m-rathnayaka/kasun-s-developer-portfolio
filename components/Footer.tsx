@@ -12,7 +12,7 @@ export function Footer() {
             <span className="text-purple-100">Interactive realities</span>
           </h1>
           <p className="pt-4 md:pt-10 max-w-[400px]">
-            Have a project in mind? Reach out to me, and let's turn your ideas
+            Have a project in mind? Reach out to me, and let&apos;s turn your ideas
             into interactive realities that inspire and engage.
           </p>
           <a href="mailto:k.rathnayaka365@gmail.com" className="mt-5 md:mt-14">

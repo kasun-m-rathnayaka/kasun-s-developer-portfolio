@@ -465,7 +465,7 @@ const projectData: Project[] = [
     title: "Inventory Management Web Application",
     description:
       "This project involved creating an inventory management system for a cooking equipment shop to streamline the tracking, updating, and monitoring of stock levels. The system was designed to provide real-time data on inventory levels, sales, and product details, ensuring efficient management of stock and timely reordering of items.",
-    images: ["4.png"],
+    images: ["ssd1.png", "ssd2.png", "ssd3.png"],
     keyFeatures: [
       "📸 Real-time Inventory Tracking",
       "🔐 Product Details & Sales Reports",
@@ -473,10 +473,21 @@ const projectData: Project[] = [
       "💬 Multiple User Roles & Permissions",
       "📷 Responsive Design for a seamless experience across all devices",
     ],
-    technologies: ["React", "Node.js", "Express", "MySql", "Sass", "Postman","Material Ui"],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MySql",
+      "Sass",
+      "Postman",
+      "Material Ui",
+    ],
     challenges: "",
     solutions: "",
     nextSteps: "",
+    liveUrl: "https://ssd-cooking-equipment-pvt-ltd.netlify.app/",
+    githubUrl:
+      "https://github.com/kasun-m-rathnayaka/SSD-Cooking-equipment-shop",
   },
   {
     id: "4",
@@ -485,19 +496,72 @@ const projectData: Project[] = [
       "The JavaFX Point of Sales (POS) system is a robust, efficient, and user-friendly solution designed to streamline and automate sales processes for small to medium-sized businesses. Built using the JavaFX framework, this system delivers an intuitive interface combined with powerful backend features, offering seamless transaction handling, inventory management, and real-time sales analytics.",
     images: ["5.png"],
     keyFeatures: [
-      "User-Friendly Interface: The JavaFX-based interface is easy to navigate, providing a clean and responsive design that minimizes training time for employees.",
-      "Inventory Management: Track stock levels in real-time, manage product details, and receive notifications for low inventory, ensuring that your shelves are always stocked.",
-      "Sales Tracking: Keep a detailed record of all sales transactions, including receipts, refunds, and payment methods, enabling a clear view of your daily revenue.",
-      "Multiple Payment Options: Supports a variety of payment methods, including cash, credit/debit cards, and mobile payments, ensuring flexibility for customers.",
+      "📸 User-Friendly Interface: The JavaFX-based interface is easy to navigate, providing a clean and responsive design that minimizes training time for employees.",
+      "📦 Inventory Management: Track stock levels in real-time, manage product details, and receive notifications for low inventory, ensuring that your shelves are always stocked.",
+      "💰 Sales Tracking: Keep a detailed record of all sales transactions, including receipts, refunds, and payment methods, enabling a clear view of your daily revenue.",
+      "💳 Multiple Payment Options: Supports a variety of payment methods, including cash, credit/debit cards, and mobile payments, ensuring flexibility for customers.",
     ],
-    technologies: [
-      "Javafx",
-      "Mysql",
-      "Scene Builder",
+    technologies: ["Javafx", "Mysql", "Scene Builder"],
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
+    githubUrl:
+      "https://github.com/kasun-m-rathnayaka/Java-FX-Transaction-Processing-System",
+  },
+  {
+    id: "5",
+    title: "Department of IT Thorana",
+    description:
+      "Our team created a Poson Thorana using Next.js, featuring interactive elements, modern design, and smooth performance to celebrate the cultural event.",
+    images: ["Thorana.png"],
+    keyFeatures: [
+      "📸 Interactive Digital Display - Showcases a virtual Poson Thorana with engaging animations and lights.",
+      "🖼️ Mobile Responsive Design - Optimized for viewing on both mobile and desktop devices.",
+      "💬 Historical and Cultural Content - Provides information on the significance of Poson and related cultural stories.",
+      "🔐 Tailwind CSS & Next.js Integration - Ensures fast loading and smooth user experience with modern technologies.",
+    ],
+    technologies: ["Next js", "Tailwind Css", "Vercel", "Google Anayatics API"],
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
+    liveUrl: "https://department-of-it-torana.vercel.app/",
+    githubUrl: "https://github.com/kasun-m-rathnayaka/Department-of-IT-Torana",
+  },
+  {
+    id: "6",
+    title: "Dhara website",
+    description:
+      "🎵 A website for the Dhara Society, built with WordPress and Elementor, to showcase the society's exquisite compositions and events.",
+    images: ["5.png"],
+    keyFeatures: [
+      "📸 Event Showcase: Highlighting upcoming and past events with detailed descriptions.",
+      "🎵 Composition Gallery: Displaying the society's exquisite musical or artistic compositions.",
+      "📱 Responsive Design: Ensuring the site works well on all devices.",
+      "🔧 Customizable Layout: Built with Elementor for easy updates and content management.",
     ],
     challenges: "",
     solutions: "",
     nextSteps: "",
+    technologies: ["Wordpress", "Elementor"],
+    liveUrl: "https://dhaara.flairclub.lk/",
+  },
+  {
+    id: "7",
+    title: "EduTrack University Management System",
+    description:
+      "Comprehensive university management system that simplifies administrative tasks, enhances communication, and improves student engagement.",
+    images: ["5.png"],
+    keyFeatures: [
+      "Student Information Management: Centralized system to manage student records, grades, and profiles.",
+      "Course and Curriculum Management: Organizing course offerings, schedules, and prerequisites.",
+      "Faculty Management: Managing faculty profiles, workloads, and evaluations.",
+      "Examination and Grading System: Facilitating exams, grade submissions, and result announcements.",
+    ],
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
+    technologies: ["Wordpress", "Elementor"],
+    liveUrl: "https://dhaara.flairclub.lk/",
   },
 ];
 
