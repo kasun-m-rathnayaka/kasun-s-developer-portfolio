@@ -414,7 +414,7 @@ const projectData: Project[] = [
     id: "1",
     title: "PhotoGenic Application",
     description:
-      "Photogenic is more than just a platform; it's a community designed to create job opportunities for talented photographers and videographers. Our goal is to connect creative minds with those who appreciate their work, providing a space to showcase skilled art and foster collaboration.\nThis project was a collaborative effort where we leveraged various tools to ensure seamless communication and efficient development. It was a rewarding experience working together as a team to bring this vision to life.Proud to have contributed to this project, combining creativity and technology with a collaborative approach to support the artistic community. Can't wait to see the incredible work that will be shared on Photogenic!",
+      "Photogenic is more than just a platform; it's a community designed to create job opportunities for talented photographers and videographers. Our goal is to connect creative minds with those who appreciate their work, providing a space to showcase skilled art and foster collaboration.\nThis project was a collaborative effort where we leveraged various tools to ensure seamless communication and efficient development. It was a rewarding experience working together as a team to bring this vision to life. Proud to have contributed to this project, combining creativity and technology with a collaborative approach to support the artistic community. Can't wait to see the incredible work that will be shared on Photogenic! 😊📸",
     images: [
       "photogenic.jpeg",
       "photogenic2.jpeg",
@@ -532,7 +532,7 @@ const projectData: Project[] = [
     title: "Dhara website",
     description:
       "🎵 A website for the Dhara Society, built with WordPress and Elementor, to showcase the society's exquisite compositions and events.",
-    images: ["5.png"],
+    images: ["dhara1.png", "dhara2.png", "dhara3.png"],
     keyFeatures: [
       "📸 Event Showcase: Highlighting upcoming and past events with detailed descriptions.",
       "🎵 Composition Gallery: Displaying the society's exquisite musical or artistic compositions.",
@@ -550,18 +550,57 @@ const projectData: Project[] = [
     title: "EduTrack University Management System",
     description:
       "Comprehensive university management system that simplifies administrative tasks, enhances communication, and improves student engagement.",
-    images: ["5.png"],
+    images: [
+      "edutrack1.png",
+      "edutrack2.png",
+      "edutrack3.png",
+      "edutrack4.png",
+      "edutrack5.png",
+    ],
     keyFeatures: [
-      "Student Information Management: Centralized system to manage student records, grades, and profiles.",
-      "Course and Curriculum Management: Organizing course offerings, schedules, and prerequisites.",
-      "Faculty Management: Managing faculty profiles, workloads, and evaluations.",
-      "Examination and Grading System: Facilitating exams, grade submissions, and result announcements.",
+      "📸 Student Information Management: Centralized system to manage student records, grades, and profiles.",
+      "📱 Course and Curriculum Management: Organizing course offerings, schedules, and prerequisites.",
+      "🔧 Faculty Management: Managing faculty profiles, workloads, and evaluations.",
+      "🔐 Examination and Grading System: Facilitating exams, grade submissions, and result announcements.",
     ],
     challenges: "",
     solutions: "",
     nextSteps: "",
-    technologies: ["Wordpress", "Elementor"],
-    liveUrl: "https://dhaara.flairclub.lk/",
+    technologies: [
+      "Next js",
+      "Tailwind css",
+      "Shadcn",
+      "Mongodb",
+      "Vercel",
+      "Postman",
+    ],
+    liveUrl: "https://edu-track2.vercel.app/",
+    githubUrl:
+      "https://github.com/kasun-m-rathnayaka/eduTrack-university-management-system",
+  },
+  {
+    id: "8",
+    title: "UI UX Designs for a Mobile App",
+    description:
+      "Designed user-friendly interfaces for a mobile app, ensuring a seamless user experience and intuitive navigation.",
+    images: [
+      "10.png",
+      "app1.jpg",
+      "app2.png",
+    ],
+    keyFeatures: [
+      "📸 Soft Shadows and Highlights: Emphasizing a tactile, 3D look with subtle shadows and highlights to create depth.",
+      "📱 Minimalist Color Palette: Using light and neutral tones to enhance the soft, raised button effect.",
+      "🔧 Smooth, Rounded Elements: Buttons, cards, and toggles have smooth, rounded corners for a modern look.",
+      "🔐 Interactive Feedback: Visual feedback for buttons, sliders, and input fields to mimic real-world touch interaction.",
+    ],
+    challenges: "",
+    solutions: "",
+    nextSteps: "",
+    technologies: [
+      "Figma",
+      "Adobe XD",
+    ],
   },
 ];
 
