@@ -375,11 +375,11 @@ const techstack = [
 ];
 
 const approaches = [
-  "This phase involves defining project goals, gathering requirements from stakeholders, and conducting a feasibility study to ensure alignment on objectives, scope, timeline, and resources before development begins.",
+  "I prioritize empathy in my design process by deeply understanding users' needs, behaviors, and emotions. Through research and active listening, I create solutions that resonate with their experiences, ensuring a user-centered approach. This empathy-driven perspective leads to designs that are intuitive, meaningful, and truly impactful.",
 
-  "The development phase includes designing system architecture, coding core functionality, and integrating software components to ensure smooth operation and cohesion, transforming plans into a working software solution.",
+  "In my design process, I use ideation to generate and explore a wide range of creative ideas. This step allows me to brainstorm, sketch, and prototype multiple solutions, ensuring the final design is innovative, user-centered, and addresses key challenges effectively.",
 
-  "This step involves testing for bugs, deploying the software to production, and providing ongoing maintenance, ensuring reliability and continuous improvements based on user feedback and operational needs.",
+  "I use prototypes in my design process to visually communicate ideas, test functionality, and gather feedback. By creating interactive mockups, I refine the user experience and ensure that the design meets user needs, ultimately improving the final product before full-scale development.",
 ];
 
 const socialmedia = [

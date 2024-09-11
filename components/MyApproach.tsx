@@ -3,7 +3,6 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import { approaches } from "@/data";
-import MagicButton from "./ui/MagicButton";
 
 const MyApproach = () => {
   return (
@@ -15,13 +14,13 @@ const MyApproach = () => {
         <p className="max-w-[900px] text-center">My development approach is uniquely focused on blending creativity with precision. I prioritize understanding the core needs of users, designing intuitive interfaces, and building scalable, high-performance solutions. By leveraging modern technologies and agile methodologies, I ensure each project is crafted with attention to detail, adaptability, and future growth in mind. This results in interactive and seamless digital experiences that stand out in both functionality and design.</p>
       </div>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-black w-full gap-4 mx-auto px-8">
-        <Card approach="Planning" title={approaches[0]}>
+        <Card approach="Empathy on User" title={approaches[0]}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card approach="Development" title={approaches[1]}>
+        <Card approach="Ideate My Design" title={approaches[1]}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -34,7 +33,7 @@ const MyApproach = () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card approach="Testing" title={approaches[2]}>
+        <Card approach="Prototypes Regularly" title={approaches[2]}>
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
