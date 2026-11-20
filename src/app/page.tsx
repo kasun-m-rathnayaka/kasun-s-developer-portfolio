@@ -1,9 +1,11 @@
 import { About } from "@/components/About";
+import { AlsoBuilt } from "@/components/AlsoBuilt";
+import { BeyondCode } from "@/components/BeyondCode";
 import { Footer } from "@/components/Footer";
 import { Intro } from "@/components/Intro";
+import { Projects } from "@/components/Projects";
 import { Work } from "@/components/Work";
 
-// Sections 4–6 (projects, also built, beyond code) land in step 3.
 export default function Home() {
   return (
     <>
@@ -11,6 +13,9 @@ export default function Home() {
         <Intro />
         <Work />
         <About />
+        <Projects />
+        <AlsoBuilt />
+        <BeyondCode />
       </main>
       <Footer />
     </>
