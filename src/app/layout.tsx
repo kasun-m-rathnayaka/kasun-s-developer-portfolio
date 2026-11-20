@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Caveat, Geist, Geist_Mono } from "next/font/google";
+import { Nav } from "@/components/Nav";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { site } from "@/content/site";
 import "./globals.css";
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-dvh">
         <ThemeProvider>
+          <Nav />
           <div className="mx-auto w-full max-w-xl p-4 sm:p-6">{children}</div>
         </ThemeProvider>
       </body>
