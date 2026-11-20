@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Caveat, Geist, Geist_Mono } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -16,16 +17,42 @@ const geistMono = Geist_Mono({
 });
 
 // Script face used only for the footer signature "kasun".
+// Not preloaded: it only appears in the footer, so it shouldn't compete with above-the-fold content.
 const script = Caveat({
   variable: "--font-script",
   subsets: ["latin"],
+  preload: false,
 });
 
+const { profile } = site;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(site.profile.url),
-  title: site.profile.name,
+  metadataBase: new URL(profile.url),
+  title: { default: profile.name, template: `%s | ${profile.name}` },
   description: site.metaDescription,
-  // Open Graph / Twitter / generated OG image: build step 6.
+  authors: [{ name: profile.name, url: profile.url }],
+  creator: profile.name,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: profile.name,
+    title: profile.name,
+    description: site.metaDescription,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: profile.name,
+    description: site.metaDescription,
+  },
+  // OG / Twitter images come from app/opengraph-image.tsx (and the per-project one).
+};
+
+export const viewport: Viewport = {
+  // The site is dark by default, so match the browser chrome to it.
+  themeColor: "#1a1818",
+  colorScheme: "dark light",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -41,6 +68,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Nav />
           <div className="mx-auto w-full max-w-xl p-4 sm:p-6">{children}</div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

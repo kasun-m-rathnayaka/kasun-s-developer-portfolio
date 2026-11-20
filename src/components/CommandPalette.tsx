@@ -75,18 +75,6 @@ export function CommandPalette({ open, onOpenChange, toggleTheme, notify }: Prop
   const router = useRouter();
   const [query, setQuery] = useState("");
 
-  // ⌘K / Ctrl+K toggles the palette from anywhere (Esc is handled by the dialog).
-  useEffect(() => {
-    const onKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-        e.preventDefault();
-        onOpenChange(!open);
-      }
-    };
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open, onOpenChange]);
-
   const handleOpenChange = (next: boolean) => {
     if (!next) setQuery("");
     onOpenChange(next);

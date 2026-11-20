@@ -18,9 +18,24 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) return {};
+  const url = `/projects/${project.slug}`;
   return {
-    title: `${project.title} | ${site.profile.name}`,
+    title: project.title, // layout title template appends the site name
     description: project.hoverLine,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      url,
+      siteName: site.profile.name,
+      title: project.title,
+      description: project.hoverLine,
+      publishedTime: project.isoDate,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: project.title,
+      description: project.hoverLine,
+    },
   };
 }
 
@@ -72,7 +87,8 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
             width={1200}
             height={630}
             sizes="(min-width: 576px) 528px, 100vw"
-            priority
+            loading="eager"
+            fetchPriority="high"
             className="mt-8 aspect-[1200/630] w-full rounded-card border border-border object-cover"
           />
 

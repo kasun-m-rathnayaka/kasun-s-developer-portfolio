@@ -29,7 +29,8 @@ function Photo() {
       alt={`Portrait of ${name}`}
       width={160}
       height={160}
-      priority
+      loading="eager"
+      fetchPriority="high"
       className="size-20 rounded-full border border-border object-cover"
     />
   );
