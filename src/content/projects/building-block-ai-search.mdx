@@ -1,0 +1,17 @@
+---
+title: Building Block AI search
+date: Feb 2026
+stack: [.NET, Azure Functions, Azure AI Search, Azure Artifacts]
+---
+
+## Problem
+
+IDM building blocks couldn't be found with AI search, and every app would otherwise rebuild the same indexing logic.
+
+## What I built
+
+The indexing flow covers single blocks, removal on delete, and automatic indexing when a block is created. I packaged it as a Building Block Search SDK on Azure Artifacts, backed by an Azure Function and shared DTOs so other apps can reuse it.
+
+## How
+
+I integrated it into the customer portal and the building block list page behind a feature toggle for a safe rollout. When a teammate's tree simplification changed the block structure, I updated the SDK to match.

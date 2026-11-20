@@ -64,11 +64,14 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Visible focus ring everywhere, keyboard-only. */
-:focus-visible {
-  outline: 2px solid var(--ring);
-  outline-offset: 2px;
-  border-radius: 0.375rem;
+/* Visible focus ring everywhere, keyboard-only. In the base layer so utilities
+   (e.g. outline-none on the palette input, which draws its own selection state) can override it. */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 0.375rem;
+  }
 }
 
 ::selection {

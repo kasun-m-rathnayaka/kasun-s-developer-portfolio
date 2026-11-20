@@ -30,6 +30,8 @@ export type Role = {
 export type Project = {
   slug: string;
   title: string;
+  /** Short text for the round badge on the hover card (1–3 letters) until real logos exist. */
+  badge: string;
   /** Preview-card description (hover line). */
   hoverLine: string;
   stack: string[];
@@ -153,6 +155,7 @@ export const site: Site = {
   projects: [
     {
       slug: "accure-copilot",
+      badge: "AC",
       title: "Accure Copilot",
       hoverLine:
         "An in-product AI assistant with model picker, prompt templates and code diffs, plus per-tenant, per-user and per-app AI token tracking",
@@ -164,6 +167,7 @@ export const site: Site = {
     },
     {
       slug: "time-portal-dashboards",
+      badge: "TP",
       title: "Time Portal role dashboards",
       hoverLine: "Role-based dashboards for admins, managers and PMs",
       stack: ["Blazor", ".NET", "Cosmos DB"],
@@ -174,6 +178,7 @@ export const site: Site = {
     },
     {
       slug: "building-block-ai-search",
+      badge: "BB",
       title: "Building Block AI search",
       hoverLine:
         "An SDK that makes Accure building blocks searchable with AI search",
@@ -185,6 +190,7 @@ export const site: Site = {
     },
     {
       slug: "fall-detection",
+      badge: "FD",
       title: "Fall detection for elderly care",
       hoverLine: "Real-time CCTV pose tracking that flags falls and anomalies",
       stack: ["YOLO", "MediaPipe", "OpenCV", "FastAPI"],
@@ -195,6 +201,7 @@ export const site: Site = {
     },
     {
       slug: "awe-dashboard",
+      badge: "AWE",
       title: "AWE Solution dashboard",
       hoverLine:
         "A web dashboard that replaced an Excel-based process with live charts and automation",
@@ -212,6 +219,7 @@ export const site: Site = {
     },
     {
       slug: "roofvo",
+      badge: "RV",
       title: "RoofVo website",
       hoverLine: "A marketing site for a rooftop restaurant",
       stack: ["WordPress", "Elementor", "PHP", "JavaScript"],
