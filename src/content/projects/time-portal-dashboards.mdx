@@ -1,0 +1,17 @@
+---
+title: Time Portal role dashboards
+date: Jun 2026
+stack: [Blazor, .NET, Cosmos DB]
+---
+
+## Problem
+
+Admins, managers and project managers each needed a different view of time and leave data.
+
+## What I built
+
+A set of role-based dashboards. Each user sees the ones that match their role and can switch from the home page. Admins get a team heatmap of hours logged per person each month. A member-by-day leave calendar shows submitted and approved leave, working days, weekends and public holidays. Project managers can filter by project and customer key, and "view all" opens grids that are already filtered.
+
+## How
+
+A shared colour palette keeps the charts consistent. I removed repeated queries to keep the dashboards fast, and reviewed the code with a teammate before check-in.
