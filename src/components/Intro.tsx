@@ -6,7 +6,7 @@ import { site } from "@/content/site";
 /** Round photo, or an initials placeholder until Kasun adds public/images/kasun.jpg. */
 function Photo() {
   const { photo, name } = site.profile;
-  // TODO(kasun): add the photo at public/images/kasun.jpg; the placeholder disappears automatically.
+  // Falls back to an initials circle if public/images/kasun.jpg is ever missing.
   const exists = fs.existsSync(path.join(process.cwd(), "public", photo));
 
   if (!exists) {
@@ -14,7 +14,7 @@ function Photo() {
       <div
         role="img"
         aria-label="Photo placeholder"
-        className="flex size-20 items-center justify-center rounded-full border border-border bg-card font-mono text-sm text-muted"
+        className="flex size-32 items-center justify-center rounded-full border border-border bg-card font-mono text-sm text-muted"
       >
         {name
           .split(" ")
@@ -27,11 +27,11 @@ function Photo() {
     <Image
       src={photo}
       alt={`Portrait of ${name}`}
-      width={160}
-      height={160}
+      width={256}
+      height={256}
       loading="eager"
       fetchPriority="high"
-      className="size-20 rounded-full border border-border object-cover"
+      className="size-32 rounded-full border border-border object-cover"
     />
   );
 }

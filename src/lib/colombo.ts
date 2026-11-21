@@ -1,6 +1,6 @@
 const TIME_ZONE = "Asia/Colombo";
 
-// Heuristic only: 07:00–22:59 Colombo time counts as "probably awake".
+// 07:00–22:59 Colombo time counts as "probably awake" (confirmed by Kasun).
 const AWAKE_FROM_HOUR = 7;
 const AWAKE_UNTIL_HOUR = 23;
 
