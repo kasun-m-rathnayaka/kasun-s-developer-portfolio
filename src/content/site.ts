@@ -39,8 +39,6 @@ export type Project = {
   date: string;
   /** Machine-readable date (first of the month) for sorting / metadata. */
   isoDate: string;
-  /** null = to fill in. Shown as a placeholder on the case study page. */
-  outcome: string | null;
 };
 
 export type AlsoBuiltItem = {
@@ -80,9 +78,7 @@ export const site: Site = {
     location: "Colombo, Sri Lanka",
     email: "k.rathnayaka365@gmail.com",
     url: "https://kasun.tech",
-    // TODO(kasun): add the photo at public/images/kasun.jpg (placeholder until then)
     photo: "/images/kasun.jpg",
-    // TODO(kasun): add the updated PDF at public/Kasun_Rathnayaka_CV.pdf
     cv: "/cv",
     github: "https://github.com/kasun-m-rathnayaka",
     linkedin: "https://www.linkedin.com/in/rathnayaka/",
@@ -162,8 +158,6 @@ export const site: Site = {
       stack: ["Blazor", ".NET", "Azure OpenAI"],
       date: "Nov 2025",
       isoDate: "2025-11-01",
-      // TODO(kasun): outcome (adoption, teams using it, decisions the usage data informed)
-      outcome: null,
     },
     {
       slug: "time-portal-dashboards",
@@ -173,8 +167,6 @@ export const site: Site = {
       stack: ["Blazor", ".NET", "Cosmos DB"],
       date: "Jun 2026",
       isoDate: "2026-06-01",
-      // The plan gives no Outcome section for this project.
-      outcome: null,
     },
     {
       slug: "building-block-ai-search",
@@ -185,8 +177,6 @@ export const site: Site = {
       stack: [".NET", "Azure Functions", "Azure AI Search", "Azure Artifacts"],
       date: "Feb 2026",
       isoDate: "2026-02-01",
-      // The plan gives no Outcome section for this project.
-      outcome: null,
     },
     {
       slug: "fall-detection",
@@ -196,8 +186,6 @@ export const site: Site = {
       stack: ["YOLO", "MediaPipe", "OpenCV", "FastAPI"],
       date: "Jul 2025",
       isoDate: "2025-07-01",
-      // TODO(kasun): outcome (accuracy or frames per second, demo video or GIF)
-      outcome: null,
     },
     {
       slug: "awe-dashboard",
@@ -214,8 +202,6 @@ export const site: Site = {
       ],
       date: "Dec 2024",
       isoDate: "2024-12-01",
-      // TODO(kasun): outcome (hours saved per week, number of users)
-      outcome: null,
     },
     {
       slug: "roofvo",
@@ -225,8 +211,6 @@ export const site: Site = {
       stack: ["WordPress", "Elementor", "PHP", "JavaScript"],
       date: "Dec 2024",
       isoDate: "2024-12-01",
-      // TODO(kasun): outcome (traffic or booking changes, link to the live site)
-      outcome: null,
     },
   ],
 
@@ -262,8 +246,7 @@ export const site: Site = {
       kind: "education",
       title: "B.Sc. (Hons) Business Information Systems",
       org: "University of Sri Jayewardenepura",
-      // TODO(kasun): graduation date
-      date: null,
+      date: "Dec 2025",
     },
     {
       kind: "award",
