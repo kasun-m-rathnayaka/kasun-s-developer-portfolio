@@ -11,9 +11,11 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+// Mono is only used for small dates and hints, never the LCP element, so don't preload it.
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  preload: false,
 });
 
 // Script face used only for the footer signature "kasun".
